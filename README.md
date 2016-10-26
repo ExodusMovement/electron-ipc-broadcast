@@ -37,7 +37,7 @@ In any process (main or renderer) to listen to messages:
 
 ```js
 import { ipcRenderer } from '#electron'
-ipcRenderer.on('tx:receive', (event, { payload }) => {
+ipcRenderer.on('somemodule:somechannel', (event, { payload }) => {
   const { message } = payload
   console.log(message) // => hello
 })
