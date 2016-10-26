@@ -45,7 +45,8 @@
     "lint": "standard",
     "prepublish": "npm test",
     "posttest": "NODE_ENV=production npm run build",
-    "test": "npm run build && npm run lint"
+    "test": "npm run build && npm run lint",
+    "unit": "npm run lint"
   },
   "standard": {
     "ignore": "lib/",
