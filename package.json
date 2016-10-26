@@ -1,0 +1,54 @@
+{
+  "name": "electron-ipc-broadcast",
+  "description": "Broadcast IPC messages to all Electron processes.",
+  "version": "0.0.0",
+  "author": "JP Richardson <jprichardson@gmail.com> (https://www.exodus.io)",
+  "bugs": {
+    "url": "https://github.com/jprichardson/electron-ipc-broadcast/issues"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-eslint": "^7.0.0",
+    "babel-plugin-syntax-flow": "^6.8.0",
+    "babel-plugin-transform-flow-strip-types": "^6.8.0",
+    "babel-plugin-typecheck": "^3.9.0",
+    "babel-preset-node6": "^11.0.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "babel-register": "^6.16.3",
+    "standard": "^8.4.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.2"
+  },
+  "engines": {
+    "electron": ">= 1.0.0"
+  },
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "homepage": "https://github.com/jprichardson/electron-ipc-broadcastr#readme",
+  "jsnext:main": "./src/index.js",
+  "keywords": [
+    "electron",
+    "ipc",
+    "broadcast",
+    "process"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jprichardson/electron-ipc-broadcast.git"
+  },
+  "scripts": {
+    "build": "babel --ignore=__tests__ src --out-dir lib",
+    "lint": "standard",
+    "prepublish": "npm test",
+    "posttest": "NODE_ENV=production npm run build",
+    "test": "npm run build && npm run lint"
+  },
+  "standard": {
+    "ignore": "lib/",
+    "parser": "babel-eslint"
+  }
+}

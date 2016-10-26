@@ -1,0 +1,11 @@
+{
+  "presets": [
+    "node6",
+    "stage-3"
+  ],
+  "plugins": [
+    ["typecheck", { "disable": { "production": false } }],
+    "syntax-flow",
+    "transform-flow-strip-types"
+  ]
+}
