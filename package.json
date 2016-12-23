@@ -1,7 +1,7 @@
 {
   "name": "electron-ipc-broadcast",
   "description": "Broadcast IPC messages to all Electron processes.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "JP Richardson <jprichardson@gmail.com> (https://www.exodus.io)",
   "bugs": {
     "url": "https://github.com/jprichardson/electron-ipc-broadcast/issues"
