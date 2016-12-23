@@ -28,6 +28,7 @@
   ],
   "homepage": "https://github.com/jprichardson/electron-ipc-broadcastr#readme",
   "jsnext:main": "./src/index.js",
+  "module": "./src/index.js",
   "keywords": [
     "electron",
     "ipc",
